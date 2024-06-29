@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListCarActivity"
+    android:padding="20dp">
+
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:queryHint="Tìm kiếm sản phẩm"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn_sort_high_to_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/caothap"
+            android:text="Giá cao đến thấp" />
+
+        <ImageButton
+            android:id="@+id/btn_sort_low_to_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thapcao"
+            android:text="Giá thấp đến cao" />
+    </LinearLayout>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        android:layout_weight="1"
+        android:id="@+id/rc_car"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/btn_add"
+        android:src="@drawable/plus"
+        android:layout_margin="10dp"
+        android:layout_gravity="end"/>
+
+
+</LinearLayout>
